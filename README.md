@@ -1,7 +1,5 @@
 # Zen Garden Website Design
 
-![Zen Garden Logo](zen-garden-logo.png)
-
 This is the README file for the Zen Garden website design project. 
 
 ## Project Overview

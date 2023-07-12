@@ -1,0 +1,941 @@
+/* Import fonts from https://www.dafont.com */
+@import url("https://fonts.googleapis.com/css?family=Electrolize");
+/* Atoms */
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bigruns";
+  src: url("../Bigruns.ttf");
+}
+p,
+a {
+  color: #ffffff;
+  font-family: "Electrolize", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #31a6ff;
+  font-family: "Bigruns", sans-serif;
+  font-size: 25px;
+}
+
+/* Rest of the atom styles */
+@media screen and (min-width: 1400px) {
+  #zen-supporting {
+    left: 40vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .intro {
+    height: 225px;
+    overflow: scroll;
+    width: 100%;
+    top: 5%;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #31a6ff;
+    z-index: 0;
+    box-shadow: 0px -10px 74px 31px rgba(83, 253, 255, 0.35);
+  }
+  .sidebar {
+    height: 280px;
+    overflow: scroll;
+    left: 0;
+    top: 530px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #31a6ff;
+    box-shadow: 0px -10px 50px 15px rgba(83, 253, 255, 0.35);
+  }
+  #zen-supporting {
+    position: absolute;
+    top: 265px;
+    left: 5px;
+    height: 225px;
+    overflow: hidden;
+    overflow-y: scroll;
+    animation: none;
+  }
+  #zen-supporting div,
+  #zen-supporting footer {
+    background: none;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    overflow-y: visible;
+    position: relative;
+    box-shadow: none;
+    transition: all 0.3s ease-out;
+    padding: 15px;
+    text-align: left;
+  }
+  #zen-supporting div:hover,
+  #zen-supporting footer:hover {
+    box-shadow: none;
+    width: inherit;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+  }
+  #zen-participation,
+  #zen-explanation,
+  #zen-benefits,
+  #zen-requirements,
+  footer {
+    transform: none;
+  }
+  #zen-participation:hover,
+  #zen-explanation:hover,
+  #zen-benefits:hover,
+  #zen-requirements:hover,
+  footer:hover {
+    transform: none;
+  }
+  .extra6 {
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    border-radius: 0px 0px 0px 5px;
+  }
+}
+/* Organisms */ /* Atoms */
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bigruns";
+  src: url("../Bigruns.ttf");
+}
+p,
+a {
+  color: #ffffff;
+  font-family: "Electrolize", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #31a6ff;
+  font-family: "Bigruns", sans-serif;
+  font-size: 25px;
+}
+
+/* Rest of the atom styles */
+@media screen and (min-width: 1400px) {
+  #zen-supporting {
+    left: 40vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .intro {
+    height: 225px;
+    overflow: scroll;
+    width: 100%;
+    top: 5%;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #31a6ff;
+    z-index: 0;
+    box-shadow: 0px -10px 74px 31px rgba(83, 253, 255, 0.35);
+  }
+  .sidebar {
+    height: 280px;
+    overflow: scroll;
+    left: 0;
+    top: 530px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #31a6ff;
+    box-shadow: 0px -10px 50px 15px rgba(83, 253, 255, 0.35);
+  }
+  #zen-supporting {
+    position: absolute;
+    top: 265px;
+    left: 5px;
+    height: 225px;
+    overflow: hidden;
+    overflow-y: scroll;
+    animation: none;
+  }
+  #zen-supporting div,
+  #zen-supporting footer {
+    background: none;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    overflow-y: visible;
+    position: relative;
+    box-shadow: none;
+    transition: all 0.3s ease-out;
+    padding: 15px;
+    text-align: left;
+  }
+  #zen-supporting div:hover,
+  #zen-supporting footer:hover {
+    box-shadow: none;
+    width: inherit;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+  }
+  #zen-participation,
+  #zen-explanation,
+  #zen-benefits,
+  #zen-requirements,
+  footer {
+    transform: none;
+  }
+  #zen-participation:hover,
+  #zen-explanation:hover,
+  #zen-benefits:hover,
+  #zen-requirements:hover,
+  footer:hover {
+    transform: none;
+  }
+  .extra6 {
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    border-radius: 0px 0px 0px 5px;
+  }
+}
+p, a {
+  color: #ffffff;
+  font-family: "Electrolize", sans-serif;
+}
+
+@keyframes transExtra {
+  55% {
+    margin-right: 10em;
+    width: 60px;
+  }
+  85% {
+    margin-right: 30em;
+    width: 80px;
+  }
+  90% {
+    margin-right: 32em;
+    width: 80px;
+  }
+  95% {
+    margin-right: 40em;
+    width: 80px;
+  }
+  100% {
+    margin-right: 80em;
+    width: 100px;
+  }
+}
+#zen-supporting {
+  position: absolute;
+  top: 135px;
+  left: 38vw;
+  height: 560px;
+  z-index: 25;
+  animation: zenFloat 5s infinite;
+}
+
+.sidebar {
+  position: absolute;
+  top: 10vh;
+  left: 70vw;
+  margin: 20px;
+}
+
+/* Rest of the organism styles */
+.sidebar div div h3 {
+  text-shadow: 0 0 10px #ffffff;
+  animation: zenFlicker 2s infinite alternate;
+}
+
+@keyframes zenFlicker {
+  20%, 24%, 75% {
+    text-shadow: none;
+  }
+}
+.sidebar div div {
+  margin-bottom: 20px;
+}
+
+.design-name {
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.designer-name {
+  text-align: right;
+}
+
+@media screen and (min-width: 1400px) {
+  #zen-supporting {
+    left: 40vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .intro {
+    height: 225px;
+    overflow: scroll;
+    width: 100%;
+    top: 5%;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #31a6ff;
+    z-index: 0;
+    box-shadow: 0px -10px 74px 31px rgba(83, 253, 255, 0.35);
+  }
+  .sidebar {
+    height: 280px;
+    overflow: scroll;
+    left: 0;
+    top: 530px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #31a6ff;
+    box-shadow: 0px -10px 50px 15px rgba(83, 253, 255, 0.35);
+  }
+  #zen-supporting {
+    position: absolute;
+    top: 265px;
+    left: 5px;
+    height: 225px;
+    overflow: hidden;
+    overflow-y: scroll;
+    animation: none;
+  }
+  #zen-supporting div,
+  #zen-supporting footer {
+    background: none;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    overflow-y: visible;
+    position: relative;
+    box-shadow: none;
+    transition: all 0.3s ease-out;
+    padding: 15px;
+    text-align: left;
+  }
+  #zen-supporting div:hover,
+  #zen-supporting footer:hover {
+    box-shadow: none;
+    width: inherit;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+  }
+  #zen-participation,
+  #zen-explanation,
+  #zen-benefits,
+  #zen-requirements,
+  footer {
+    transform: none;
+  }
+  #zen-participation:hover,
+  #zen-explanation:hover,
+  #zen-benefits:hover,
+  #zen-requirements:hover,
+  footer:hover {
+    transform: none;
+  }
+  .extra6 {
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    border-radius: 0px 0px 0px 5px;
+  }
+}
+/* Atoms */
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bigruns";
+  src: url("../Bigruns.ttf");
+}
+p,
+a {
+  color: #ffffff;
+  font-family: "Electrolize", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #31a6ff;
+  font-family: "Bigruns", sans-serif;
+  font-size: 25px;
+}
+
+/* Rest of the atom styles */
+@media screen and (min-width: 1400px) {
+  #zen-supporting {
+    left: 40vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .intro {
+    height: 225px;
+    overflow: scroll;
+    width: 100%;
+    top: 5%;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #31a6ff;
+    z-index: 0;
+    box-shadow: 0px -10px 74px 31px rgba(83, 253, 255, 0.35);
+  }
+  .sidebar {
+    height: 280px;
+    overflow: scroll;
+    left: 0;
+    top: 530px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #31a6ff;
+    box-shadow: 0px -10px 50px 15px rgba(83, 253, 255, 0.35);
+  }
+  #zen-supporting {
+    position: absolute;
+    top: 265px;
+    left: 5px;
+    height: 225px;
+    overflow: hidden;
+    overflow-y: scroll;
+    animation: none;
+  }
+  #zen-supporting div,
+  #zen-supporting footer {
+    background: none;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    overflow-y: visible;
+    position: relative;
+    box-shadow: none;
+    transition: all 0.3s ease-out;
+    padding: 15px;
+    text-align: left;
+  }
+  #zen-supporting div:hover,
+  #zen-supporting footer:hover {
+    box-shadow: none;
+    width: inherit;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+  }
+  #zen-participation,
+  #zen-explanation,
+  #zen-benefits,
+  #zen-requirements,
+  footer {
+    transform: none;
+  }
+  #zen-participation:hover,
+  #zen-explanation:hover,
+  #zen-benefits:hover,
+  #zen-requirements:hover,
+  footer:hover {
+    transform: none;
+  }
+  .extra6 {
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    border-radius: 0px 0px 0px 5px;
+  }
+}
+[role=banner] > h1 {
+  text-transform: uppercase;
+  color: #666;
+}
+
+.summary {
+  text-transform: uppercase;
+  padding: 15% 0;
+}
+.summary p:last-child {
+  text-transform: uppercase;
+}
+.summary a {
+  color: #666;
+}
+
+.preamble {
+  color: #333;
+  margin-left: -30%;
+  padding: 5% 5% 5% 30%;
+}
+
+.intro {
+  margin: 20px;
+  width: 26vw;
+  position: absolute;
+  top: 10vh;
+  z-index: 11;
+}
+
+.extra1 {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 290px;
+  height: 50px;
+}
+
+.extra2 {
+  top: 0;
+  left: 270px;
+  position: absolute;
+  width: 800px;
+  height: 700px;
+}
+
+.extra3 {
+  height: 2px;
+  width: 50px;
+  background: #31a6ff;
+  margin-top: 25em;
+  position: absolute;
+  z-index: -10;
+  animation: pulseLeft 0.95s infinite;
+}
+
+.extra4 {
+  height: 2px;
+  width: 50px;
+  background: #31a6ff;
+  margin-top: 14.5em;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  animation: transExtra 7s infinite;
+}
+
+.extra5 {
+  height: 2px;
+  width: 50px;
+  background: #31a6ff;
+  margin-top: 17.5em;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  animation: transExtra 2s infinite;
+}
+
+.extra6 {
+  background: url(../assets/logo.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 0px 0px 5px;
+}
+
+/* Molecule: Zen */
+#zen-explanation,
+#zen-participation,
+#zen-benefits,
+#zen-requirements {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(0);
+}
+
+#zen-explanation:hover,
+#zen-participation:hover,
+#zen-benefits:hover,
+#zen-requirements:hover {
+  transform: translateY(0) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2);
+}
+
+#zen-explanation {
+  z-index: 10;
+}
+
+#zen-participation {
+  transform: translateZ(250px);
+  z-index: 9;
+}
+
+#zen-benefits {
+  transform: translateZ(500px);
+  z-index: 8;
+}
+
+#zen-requirements {
+  transform: translateZ(750px);
+  z-index: 7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bigruns";
+  src: url("../Bigruns.ttf");
+}
+html {
+  background-image: url(../assets/zen.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+
+body {
+  height: 800px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#zen-preamble > h3 {
+  margin-top: 20px;
+}
+
+.intro {
+  margin: 20px;
+  width: 26vw;
+  position: absolute;
+  top: 10vh;
+  z-index: 11;
+  font-size: 15px; /* Added font size */
+}
+
+.extra1 {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 290px;
+  height: 50px;
+}
+
+.extra2 {
+  top: 0;
+  left: 270px;
+  position: absolute;
+  width: 800px;
+  height: 700px;
+}
+
+.extra3 {
+  height: 2px;
+  width: 50px;
+  background: #31a6ff;
+  margin-top: 25em;
+  position: absolute;
+  z-index: -10;
+  animation: pulseLeft 0.95s infinite;
+}
+
+.extra4 {
+  height: 2px;
+  width: 50px;
+  background: #31a6ff;
+  margin-top: 14.5em;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  animation: transExtra 7s infinite;
+}
+
+.extra5 {
+  height: 2px;
+  width: 50px;
+  background: #31a6ff;
+  margin-top: 17.5em;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  animation: transExtra 2s infinite;
+}
+
+.extra6 {
+  background: url(../assets/logo.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 0px 0px 5px;
+}
+
+#zen-supporting {
+  position: absolute;
+  top: 135px;
+  left: 38vw;
+  height: 560px;
+  z-index: 25;
+  animation: zenFloat 5s infinite;
+}
+
+.sidebar {
+  position: absolute;
+  top: 10vh;
+  left: 70vw;
+  margin: 20px;
+}
+
+.wrapper div ul li {
+  list-style: none;
+}
+
+@keyframes zenFloat {
+  60% {
+    transform: translateY(-30px);
+  }
+}
+#zen-supporting div {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: relative;
+  box-shadow: 1px 1px 5px 2px #ffffff; /* Adjust the values to achieve the desired dimmed effect */
+  transition: all 0.3s ease-out;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  /* Scrollbar Styles */
+}
+#zen-supporting div::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+#zen-supporting div::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3); /* Adjust the color as needed */
+  border-radius: 3px; /* Adjust the border radius as needed */
+}
+
+#zen-supporting div:hover {
+  z-index: 11;
+  box-shadow: none;
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  transform-origin: 100% 100%;
+}
+
+#zen-supporting div:hover ~ .supporting,
+#zen-supporting footer:hover ~ .supporting {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+#zen-supporting div:hover > .aside {
+  display: none;
+}
+
+/* Content */
+#zen-explanation {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(0);
+  z-index: 10;
+}
+
+#zen-explanation:hover {
+  transform: translateY(0) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2);
+}
+
+#zen-participation {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(250px);
+  z-index: 9;
+}
+
+#zen-participation:hover {
+  transform: translateY(-250px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2);
+}
+
+#zen-benefits {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(500px);
+  z-index: 8;
+}
+
+#zen-benefits:hover {
+  transform: translateY(-500px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2);
+}
+
+#zen-requirements {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(750px);
+  z-index: 7;
+}
+
+#zen-requirements:hover {
+  transform: translateY(-600px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2);
+}
+
+.sidebar div div h3 {
+  text-shadow: 0 0 10px #ffffff;
+  animation: zenFlicker 2s infinite alternate;
+}
+
+@keyframes zenFlicker {
+  20%, 24%, 75% {
+    text-shadow: none;
+  }
+}
+.sidebar div div {
+  margin-bottom: 20px;
+}
+
+.design-name {
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.designer-name {
+  text-align: right;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1400px) {
+  #zen-supporting {
+    left: 40vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    background: none;
+  }
+  .intro {
+    height: 225px;
+    overflow: scroll;
+    width: 100%;
+    top: 5%;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #31a6ff;
+    z-index: 0;
+    box-shadow: 0px -10px 74px 31px rgba(83, 253, 255, 0.35);
+  }
+  .sidebar {
+    height: 280px;
+    overflow: scroll;
+    left: 0;
+    top: 530px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #31a6ff;
+    box-shadow: 0px -10px 50px 15px rgba(83, 253, 255, 0.35);
+  }
+  #zen-supporting {
+    position: absolute;
+    top: 265px;
+    left: 5px;
+    height: 225px;
+    overflow: hidden;
+    overflow-y: scroll;
+    animation: none;
+  }
+  #zen-supporting div,
+  #zen-supporting footer {
+    background: none;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    overflow-y: visible;
+    position: relative;
+    box-shadow: none;
+    transition: all 0.3s ease-out;
+    padding: 15px;
+    text-align: left;
+  }
+  #zen-supporting div:hover,
+  #zen-supporting footer:hover {
+    box-shadow: none;
+    width: inherit;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+  }
+  #zen-participation,
+  #zen-explanation,
+  #zen-benefits,
+  #zen-requirements,
+  footer {
+    transform: none;
+  }
+  #zen-participation:hover,
+  #zen-explanation:hover,
+  #zen-benefits:hover,
+  #zen-requirements:hover,
+  footer:hover {
+    transform: none;
+  }
+  .extra6 {
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    border-radius: 0px 0px 0px 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

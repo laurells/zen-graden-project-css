@@ -1,13 +1,13 @@
-@use '_variables' as *; //this puts all the variables in the global namespace.
-@use '_atoms';
-@use '_molecules';
-@use '_organisms';
+@use 'variables' as *; //this puts all the variables in the global namespace.
+@use 'atoms';
+//@use 'molecules';
+//@use 'organisms' as o;
 
 * {
   box-sizing: border-box;
 }
 html {
-  background-color: $contrast-color;
+  background-color: $background-color;
   padding: 5%;
 }
 
@@ -15,7 +15,7 @@ body {
   font-family: $fonts-body;
   font-size: 85%;
   color: $text-dark;
-  background-color: $primary-color;
+  background-color: $primary;
   margin: 0;
   padding: 1em;
 }
@@ -42,13 +42,13 @@ section {
   border: 1px solid;
 }
 .primary {
-  background-color: $primary-color;
+  background-color: $primary;
 }
 .accent1 {
-  background-color: $accent-color;
+  background-color: $accent1;
 }
 .accent2 {
-  background-color: $contrast-color;
+  background-color: $accent2;
 }
 .text-dark {
   background-color: $text-dark;
@@ -59,8 +59,8 @@ section {
   padding: 1em;
 }
 .uppercase {
-  @include _atoms.uppercase;
+  @include atoms.uppercase;
 }
 .uppercase-light {
-  @include _atoms.uppercase($text-light);
+  @include atoms.uppercase($text-light);
 }

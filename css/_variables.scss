@@ -1,20 +1,13 @@
-$primary-color: #0b3d91;
-$secondary-color: #8ec3eb;
-$accent-color: #7fb984;
-$contrast-color: #ffffff;
-$background-color: #f0f0f0;
-$font-primary: 'Montserrat', sans-serif;
-$fonts-body: verdana, arial;
-$font-size-base: 16px;
-$line-height-base: 1.5;
-$header-height: 80px;
-$header-padding: 0 20px;
-$grey-sidebar: rgba(51, 55, 69, 0.9);
+$background-color: #0b3d91;
+$primary: #31a6ff;
+$primary2: #ffffff;
 $text-dark: #333;
-$text-light: #fff;
-$link-color: $color-primary;
-$link-hover-color: darken($color-primary, 10%);
+$text-light: #666;
+$zenScale: scale(1.2);
+$fonts-min: 'Bigruns';
+$fonts-body: "Bigruns", sans-serif;
+$fonts-body2: "Electrolize", sans-serif;
 
-// $header-uppercase {
-//     text-transform: uppercase;
-//   }
+$bgimage: url(../assets/zen.png);
+$logo: url(../assets/logo.png);
+$font-biggruns: url("../Bigruns.ttf");

@@ -1,12 +1,173 @@
-.intro {
-  padding: 5%;
-  font-size: 28px;
-  font-weight: bold;
-  margin: 20px 0;
+/* Organisms */
+@import "_variables";
+@import "_atoms";
+
+p, a {
+    color: $primary2;
+    font-family: $fonts-body2; 
 }
-// .intro {
-//   @include $header-uppercase;
-//   font-size: 28px;
-//   font-weight: bold;
-//   margin: 20px 0;
+
+@keyframes transExtra {
+    55% {
+        margin-right: 10em;
+        width: 60px; 
+    }
+    85% {
+        margin-right: 30em;
+        width: 80px;
+    }
+    90% {
+        margin-right: 32em;
+        width: 80px;
+    }
+    95% {
+        margin-right: 40em;
+        width: 80px; 
+    }
+    100% {
+        margin-right: 80em;
+        width: 100px; 
+    }
+}
+
+#zen-supporting {
+  position: absolute;
+  top: 135px;
+  left: 38vw;
+  height: 560px;
+  z-index: 25;
+  animation: zenFloat 5s infinite;
+}
+
+.sidebar {
+  position: absolute;
+  top: 10vh;
+  left: 70vw;
+  margin: 20px;
+}
+
+/* Rest of the organism styles */
+.sidebar div div h3 {
+  text-shadow: 0 0 10px $primary2;
+  animation: zenFlicker 2s infinite alternate;
+}
+
+@keyframes zenFlicker {
+  20%,
+  24%,
+  75% {
+      text-shadow: none;
+  }
+}
+
+.sidebar div div {
+  margin-bottom: 20px;
+}
+
+.design-name {
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.designer-name {
+  text-align: right;
+}
+
+// footer {
+//   transform: rotateX(45deg) rotateZ(45deg) translateZ(1000px);
+//   z-index: 6;
 // }
+
+// footer:hover {
+//   transform: translateY(-700px) rotateX(20deg) rotateZ(0deg) translateZ(0) $zenScale;
+// }
+
+@media screen and (min-width: 1400px) {
+  #zen-supporting {
+      left: 40vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .intro {
+      height: 225px;
+      overflow: scroll;
+      width: 100%;
+      top: 5%;
+      margin: 0;
+      padding: 20px;
+      border: 1px solid $primary;
+      z-index: 0;
+      box-shadow: 0px -10px 74px 31px rgba(83, 253, 255, 0.35);
+  }
+
+  .sidebar {
+      height: 280px;
+      overflow: scroll;
+      left: 0;
+      top: 530px;
+      width: 100%;
+      margin: 0;
+      padding: 20px 20px 20px 40px;
+      border: 1px solid $primary;
+      box-shadow: 0px -10px 50px 15px rgba(83, 253, 255, 0.35);
+  }
+
+  #zen-supporting {
+      position: absolute;
+      top: 265px;
+      left: 5px;
+      height: 225px;
+      overflow: hidden;
+      overflow-y: scroll;
+      animation: none;
+  }
+
+  #zen-supporting div,
+  #zen-supporting footer {
+      background: none;
+      height: auto;
+      width: auto;
+      overflow: visible;
+      overflow-y: visible;
+      position: relative;
+      box-shadow: none;
+      transition: all 0.3s ease-out;
+      padding: 15px;
+      text-align: left;
+  }
+
+  #zen-supporting div:hover,
+  #zen-supporting footer:hover {
+      box-shadow: none;
+      width: inherit;
+      height: auto;
+      padding: 15px;
+      text-align: left;
+  }
+
+  #zen-participation,
+  #zen-explanation,
+  #zen-benefits,
+  #zen-requirements,
+  footer {
+      transform: none;
+  }
+
+  #zen-participation:hover,
+  #zen-explanation:hover,
+  #zen-benefits:hover,
+  #zen-requirements:hover,
+  footer:hover {
+      transform: none;
+  }
+
+  .extra6 {
+      width: 70px;
+      height: 35px;
+      position: absolute;
+      right: 0;
+      border-radius: 0px 0px 0px 5px;
+  }
+}

@@ -1,35 +1,131 @@
-@use '_variables' as *;
-@use '_atoms';
+@import '_variables';
+@import '_atoms';
 
-// use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
-//The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
 [role="banner"] {
   > h1 {
-    // notice we have to reference the 'atoms' namespace to find our mixins.
-    @include _atoms.uppercase($text-light);
+    @include uppercase();
+    color: $text-light;
   }
 }
+
 .summary {
-  @include _atoms.uppercase($text-light);
+  @include uppercase();
   padding: 15% 0;
+
   p:last-child {
-    @include _atoms.divider;
+    @include uppercase();
   }
+
   a {
-    color: $text-light; //in this case the link wants to be light instead of the default dark
+    color: $text-light;
   }
 }
+
 .preamble {
-  background: rgba(255, 255, 255, 0.9);
   color: $text-dark;
   margin-left: -30%;
   padding: 5% 5% 5% 30%;
 }
 
-.footer {
-  @include _atoms.set-flex($direction, $wrap);
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  background-color: $primary-color;
-  }
+.intro {
+  margin: 20px;
+  width: 26vw;
+  position: absolute;
+  top: 10vh;
+  z-index: 11;
+}
+
+.extra1 {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 290px;
+  height: 50px;
+}
+
+.extra2 {
+  top: 0;
+  left: 270px;
+  position: absolute;
+  width: 800px;
+  height: 700px;
+}
+
+.extra3 {
+  height: 2px;
+  width: 50px;
+  background: $primary;
+  margin-top: 25em;
+  position: absolute;
+  z-index: -10;
+  animation: pulseLeft .95s infinite;
+}
+
+.extra4 {
+  height: 2px;
+  width: 50px;
+  background: $primary;
+  margin-top: 14.5em;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  animation: transExtra 7s infinite;
+}
+
+.extra5 {
+  height: 2px;
+  width: 50px;
+  background: $primary;
+  margin-top: 17.5em;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  animation: transExtra 2s infinite;
+}
+
+.extra6 {
+  background: $logo;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 0px 0px 5px;
+}
+
+/* Molecule: Zen */
+#zen-explanation,
+#zen-participation,
+#zen-benefits,
+#zen-requirements {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(0);
+}
+
+#zen-explanation:hover,
+#zen-participation:hover,
+#zen-benefits:hover,
+#zen-requirements:hover {
+  transform: translateY(0) rotateX(20deg) rotateZ(0deg) translateZ(0) $zenScale;
+}
+
+#zen-explanation {
+  z-index: 10;
+}
+
+#zen-participation {
+  transform: translateZ(250px);
+  z-index: 9;
+}
+
+#zen-benefits {
+  transform: translateZ(500px);
+  z-index: 8;
+}
+
+#zen-requirements {
+  transform: translateZ(750px);
+  z-index: 7;
+}

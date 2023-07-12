@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Bigruns";
-  src: url("../Bigruns.ttf");
+  src: url("../Bigruns.otf");
 }
 p,
 a {
@@ -120,7 +120,7 @@ h6 {
 
 @font-face {
   font-family: "Bigruns";
-  src: url("../Bigruns.ttf");
+  src: url("../Bigruns.otf");
 }
 p,
 a {
@@ -378,7 +378,7 @@ p, a {
 
 @font-face {
   font-family: "Bigruns";
-  src: url("../Bigruns.ttf");
+  src: url("../Bigruns.otf");
 }
 p,
 a {
@@ -612,7 +612,7 @@ h6 {
 
 @font-face {
   font-family: "Bigruns";
-  src: url("../Bigruns.ttf");
+  src: url("../Bigruns.otf");
 }
 html {
   background-image: url(../assets/zen.png);
